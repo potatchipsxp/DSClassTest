@@ -1,0 +1,58 @@
+Microsoft Windows [Version 10.0.18362.1016]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\DaBoss\Documents>cd DSClasstester
+
+C:\Users\DaBoss\Documents\DSClasstester>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\DaBoss\Documents\DSClasstester>git config --global core.editor "nano"
+
+C:\Users\DaBoss\Documents\DSClasstester>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\DaBoss\Documents\DSClasstester>git add -u
+
+C:\Users\DaBoss\Documents\DSClasstester>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\DaBoss\Documents\DSClasstester>git commit -m "-u is a shortcut"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\DaBoss\Documents\DSClasstester>git commit -m "testing git ignore 1"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+        .gitignore.txt
+        images/
+
+nothing added to commit but untracked files present
+
+C:\Users\DaBoss\Documents\DSClasstester>git add images
+
+C:\Users\DaBoss\Documents\DSClasstester>git add .gitignore
+fatal: pathspec '.gitignore' did not match any files
+
+C:\Users\DaBoss\Documents\DSClasstester>git add .gitignore.txt
+
+C:\Users\DaBoss\Documents\DSClasstester>git commit -m "testing gitignore 2"
+[master 341a3fe] testing gitignore 2
+ 3 files changed, 1 insertion(+)
+ create mode 100644 .gitignore.txt
+ create mode 100644 images/AoS.jpg
+ create mode 100644 images/AoSNightHaunt.jpg
+
+C:\Users\DaBoss\Documents\DSClasstester>
